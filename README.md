@@ -1,47 +1,11 @@
 <div align="center">
-<img src="assets/logo.png" width="80">
-<h1>DiffusionDrive</h1>
-<h3>Truncated Diffusion Model for End-to-End Autonomous Driving</h3>
-
-[Bencheng Liao](https://github.com/LegendBC)<sup>1,2</sup>, [Shaoyu Chen](https://scholar.google.com/citations?user=PIeNN2gAAAAJ&hl=en&oi=sra)<sup>2,3</sup>, Haoran Yin<sup>3</sup>, [Bo Jiang](https://scholar.google.com/citations?user=UlDxGP0AAAAJ&hl=en)<sup>2</sup>, [Cheng Wang](https://scholar.google.com/citations?user=PdJIyPIAAAAJ&hl=zh-CN)<sup>1,2</sup>, [Sixu Yan](https://sixu-yan.github.io/)<sup>2</sup>, Xinbang Zhang<sup>3</sup>, Xiangyu Li<sup>3</sup>, Ying Zhang<sup>3</sup>, [Qian Zhang](https://scholar.google.com/citations?user=pCY-bikAAAAJ&hl=zh-CN)<sup>3</sup>, [Xinggang Wang](https://xwcv.github.io)<sup>2 :email:</sup>
- 
-<sup>1</sup> Institute of Artificial Intelligence, HUST, <sup>2</sup> School of EIC, HUST, <sup>3</sup> Horizon Robotics
-
-(<sup>:email:</sup>) corresponding author, xgwang@hust.edu.cn
-
-Accepted to CVPR 2025 as Highlight!
-
-[![DiffusionDrive](https://img.shields.io/badge/Paper-DiffusionDrive-2b9348.svg?logo=arXiv)](https://arxiv.org/abs/2411.15139)&nbsp;
-[![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-DiffusionDrive-yellow)](https://huggingface.co/hustvl/DiffusionDrive)&nbsp;
-
-
+<h1>AdaDiffDrive</h1>
+<h3>AdaDiffDrive: Multi-Modal Adaptive Diffusion-Based Trajectory Planning for End-to-End Autonomous Driving</h3>
 
 </div>
 
-## News
-* **` Apr. 4th, 2025`:** DiffusionDrive is awarded as CVPR 2025 Highlight!
-* **` Feb. 27th, 2025`:** DiffusionDrive is accepted to CVPR 2025!
-* **` Jan. 18th, 2025`:** We release the initial version of code and weight on nuScenes, along with documentation and training/evaluation scripts. Please run `git checkout nusc` to use it.
-* **` Dec. 16th, 2024`:** We release the initial version of code and weight on NAVSIM, along with documentation and training/evaluation scripts.
-* **` Nov. 25th, 2024`:** We released our paper on [Arxiv](https://arxiv.org/abs/2411.15139). Code/Models are coming soon. Please stay tuned! ☕️
-
-
-## Table of Contents
-- [Introduction](#introduction)
-- [Qualitative Results on NAVSIM Navtest Split](#qualitative-results-on-navsim-navtest-split)
-- [Video Demo on Real-world Application](#video-demo-on-real-world-application)
-- [Getting Started](#getting-started)
-- [Contact](#contact)
-- [Acknowledgement](#acknowledgement)
-- [Citation](#citation)
-
-## Introduction
-Diffusion policy exhibits promising multimodal property and distributional expressivity in robotic field, while not ready for real-time end-to-end autonomous driving in more dynamic and open-world traffic scenes. To bridge this gap, we propose a novel truncated diffusion model, DiffusionDrive, for real-time end-to-end autonomous driving, which is much faster (10x reduction in diffusion denoising steps), more accurate (3.5 higher PDMS on NAVSIM), and more diverse (64% higher mode diversity score) than the vanilla diffusion policy. Without bells and whistles, DiffusionDrive achieves record-breaking 88.1 PDMS on NAVSIM benchmark with the same ResNet-34 backbone by directly learning from human demonstrations, while running at a real-time speed of 45 FPS.
-
-<div align="center"><b>Truncated Diffusion Policy.</b>
-<img src="assets/truncated_diffusion_policy.png" />
-<b>Pipeline of DiffusionDrive. DiffusionDrive is highly flexible to integrate with onboard sensor data and existing perception modules.</b>
-<img src="assets/pipeline.png" />
+## Abstract
+Generating safe, diverse and even human-like trajectories in complex traffic environments is a major challenge for end-to-end autonomous driving (E2E-AD). Diffusion-based planners have recently gained popularity as a promising solution owing to their ability to approximate the high-dimensional and multi-modal action distribution. Unfortunately, existing standard diffusion planners need to iteratively denoise from noisy samples, with a high cost, whereas the existing truncated diffusion planners are usually defined via an existing fixed static anchor, which may not fit highly dynamic or long-tail driving situations. To overcome these issues, we present AdaDiffDrive, an adaptive truncated diffusion planner that substitutes the existing static statistical prior with scene-aware dynamic priors. AdaDiffDrive consists of three key components. First, a Multi-modal Sparse Fusion Transformer (MSFT) compresses camera and LiDAR observations into compact sparse scene tokens, aligning perception sparsity with planning intent. Second, these tokens are used to generate $K$ scene-adaptive anchors and construct an adaptive anchored gaussian distribution (AAGD), which provides context-aware trajectory priors while preserving multi-modal diversity. Third, a cascaded diffusion decoder equipped with adaptive truncated cross-attention selectively associates noisy trajectory points with nearby safety-critical sparse tokens, providing localized scene guidance during the denoising process. By coupling sparse scene encoding with adaptive truncated diffusion, AdaDiffDrive mitigates the trade-off between trajectory diversity, generation quality, and planning efficiency. Experiments on the NAVSIM planning benchmark show that AdaDiffDrive achieves 84.7 PDMS. Additional evaluation on nuScenes further demonstrates competitive trajectory accuracy, collision avoidance performance, and near real-time inference. These results indicate that adaptive scene-aware priors and sparse safety-guided diffusion decoding can improve the robustness and safety of E2E-AD trajectory planning.
 </div>
 
 ## Qualitative Results on NAVSIM Navtest Split
