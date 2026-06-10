@@ -1,5 +1,6 @@
 <div align="center">
 <h1>AdaDiffDrive</h1>
+  Yingqiang, Z. (2026). AdaDiffDrive_code. Zenodo. https://doi.org/10.5281/zenodo.20626700
 <h3>AdaDiffDrive: Multi-Modal Adaptive Diffusion-Based Trajectory Planning for End-to-End Autonomous Driving</h3>
 
 </div>
