@@ -2,7 +2,7 @@
 <h1>AdaDiffDrive</h1>
 <h3>Multi-Modal Adaptive Diffusion-Based Trajectory Planning for End-to-End Autonomous Driving</h3>
  
-Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1,</sup>, Fei Mo.<sup>1.
+Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1.
  
  <sup>1</sup> Department of Control Science and Engineering, College of Electrical and Automation Engineering, East China Jiaotong University, <sup>2</sup> Department of Automotive Engineering, Jiangxi Vocational and Technical College of Communications
  
