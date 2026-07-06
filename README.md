@@ -2,8 +2,8 @@
 <h1>AdaDiffDrive</h1>
 <h3>Multi-Modal Adaptive Diffusion-Based Trajectory Planning for End-to-End Autonomous Driving</h3>
  
-  Yingqiang, Zhong. (2026).<sup>1,2</sup> 
-  
+  Yingqiang Zhong. (2026).<sup>1,2</sup> 
+ 
  <sup>1</sup> Institute of Artificial Intelligence, HUST, <sup>2</sup> School of EIC, HUST
  
  AdaDiffDrive_code. Zenodo. https://doi.org/10.5281/zenodo.20626700
