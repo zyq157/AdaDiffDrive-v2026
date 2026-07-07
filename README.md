@@ -30,5 +30,9 @@ Generating safe, diverse and even human-like trajectories in complex traffic env
 - [Preparation of DiffusionDrive environment](docs/install.md)
 - [Training and Evaluation](docs/train_eval.md)
 
+## Contact
+If you have any questions, please contact [Bencheng Liao](https://github.com/LegendBC) via email (bcliao@hust.edu.cn).
 
+## Acknowledgement
+AdaDiffDrive is greatly inspired by the following outstanding contributions to the open-source community: [NAVSIM](https://github.com/autonomousvision/navsim), [Transfuser](https://github.com/autonomousvision/transfuser), [Diffusion Policy](https://github.com/real-stanford/diffusion_policy), [MapTR](https://github.com/hustvl/MapTR), [VAD](https://github.com/hustvl/VAD), [SparseDrive](https://github.com/swc-17/SparseDrive),[DiffusionDrive](https://github.com/hustvl/DiffusionDrive).
 
