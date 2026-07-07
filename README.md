@@ -27,7 +27,7 @@ Generating safe, diverse and even human-like trajectories in complex traffic env
 ## Getting Started
 
 - [Getting started from NAVSIM environment preparation](https://github.com/autonomousvision/navsim?tab=readme-ov-file#getting-started-)
-- [Preparation of DiffusionDrive environment](docs/install.md)
+- [Preparation of DiffusionDrive environment](install.md)
 - [Training and Evaluation](docs/train_eval.md)
 
 ## Contact
