@@ -14,7 +14,6 @@ Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1
 - [Abstract](#abstract)
 - [Getting Started](#getting-started)
   - [Environment Setup](#environment-setup)
-  - [Dataset Preparation](#dataset-preparation)
   - [Training & Evaluation](#training--evaluation)
 - [Project Structure](#project-structure)
 - [Contact](#contact)
