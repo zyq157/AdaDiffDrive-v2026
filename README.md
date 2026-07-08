@@ -17,6 +17,7 @@ Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1
   - [Training & Evaluation](#training--evaluation)
 - [Contact](#contact)
 - [Acknowledgement](#acknowledgement)
+- [Additional Resources](Additional Resources)
 
 
 ## Abstract
@@ -162,3 +163,12 @@ If you have any questions, please contact [Meihua Xiao] via email (2021029081100
 ## Acknowledgement
 AdaDiffDrive is greatly inspired by the following outstanding contributions to the open-source community: [NAVSIM](https://github.com/autonomousvision/navsim), [Transfuser](https://github.com/autonomousvision/transfuser), [Diffusion Policy](https://github.com/real-stanford/diffusion_policy), [MapTR](https://github.com/hustvl/MapTR), [VAD](https://github.com/hustvl/VAD), [SparseDrive](https://github.com/swc-17/SparseDrive),[DiffusionDrive](https://github.com/hustvl/DiffusionDrive).
 
+## 📁 Additional Resources
+
+This repository also includes the following supplementary files to support reproducibility and further analysis:
+
+- **`Static anchors.npy`**: A NumPy binary file containing the static anchor trajectories used in our experiments. These anchors serve as fixed priors for comparison with our proposed Adaptive Anchored Gaussian Distribution (AAGD) in the ablation studies (see Section 4.3 in the paper). The file can be loaded using `np.load('Static anchors.npy')`.
+
+- **`Calculation result file.csv`**: A CSV file containing the detailed numerical results of our experiments on the NAVSIM benchmark. It includes the PDMS scores, trajectory accuracy metrics, and collision rates for all compared methods (AdaDiffDrive, DiffusionDrive, VAD, etc.). This file enables readers to reproduce the quantitative results reported in Table 1 and Figure 5 of our paper.
+
+For any questions regarding these files, please feel free to [open an issue](https://github.com/zyq157/AdaDiffDrive-v2026/issues) or contact the corresponding author.
