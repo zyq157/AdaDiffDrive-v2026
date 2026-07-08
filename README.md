@@ -15,7 +15,6 @@ Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1
 - [Getting Started](#getting-started)
   - [Environment Setup](#environment-setup)
   - [Training & Evaluation](#training--evaluation)
-- [Project Structure](#project-structure)
 - [Contact](#contact)
 - [Acknowledgement](#acknowledgement)
 
