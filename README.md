@@ -28,11 +28,11 @@ Generating safe, diverse and even human-like trajectories in complex traffic env
 
 ## Getting Started
 
-# Download and installation
+### Download and installation
 
 To get started with NAVSIM:
 
-### 1. Clone the navsim-devkit
+#### 1. Clone the navsim-devkit
 
 Clone the repository
 
@@ -41,7 +41,7 @@ git clone https://github.com/autonomousvision/navsim.git
 cd navsim
 ```
 
-### 2. Download the dataset
+#### 2. Download the dataset
 
 You need to download the OpenScene logs and sensor blobs, as well as the nuPlan maps.
 We provide scripts to download the nuplan maps, the mini split and the test split.
@@ -123,7 +123,7 @@ In other words, the results you obtain locally on `warmup_two_stage` should matc
 `private_test_hard_two_stage` contains the challenge data.
 You will need it to generate a `submission.pkl` in order to participate in the official challenge on the [Hugging Face CPVR 2025 leaderboard](https://huggingface.co/spaces/AGC2025/e2e-driving-internal) (for more details, see [Submission](submission.md)).
 
-### 3. Install the navsim-devkit
+#### 3. Install the navsim-devkit
 
 Finally, install navsim.
 To this end, create a new environment and install the required dependencies:
