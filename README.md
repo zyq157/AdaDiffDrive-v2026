@@ -147,19 +147,17 @@ conda activate adadiffdrive
 **Option 2: Using pip**
 pip install -r requirements.txt
 
-### Dataset Preparation
-AdaDiffDrive is evaluated on the NAVSIM benchmark.
-
-1. Download the NAVSIM dataset and place it in your desired directory. For detailed instructions, please refer to the official NAVSIM getting started guide.
-
-2. Expected directory structure:
-/path/to/your/data/
-└── navsim/
-    ├── train/
-    ├── val/
-    └── test/
-3. (Optional but recommended) Preprocess the dataset to generate cached features for faster training. This step may take some time.
-python run_dataset_caching.py --dataset_path /path/to/your/data/navsim --cache_path ./cache
+### Training & Evaluation
+#### Training
+To train the model from scratch, run the training script. You can modify hyperparameters in the configuration file (if you have configs/default.yaml).
+```bash
+python run_training.py
+```
+#### Evaluation
+To evaluate a trained model, use the evaluation script (please implement evaluate.py or follow instructions in train_eval.md).
+```bash
+python evaluate.py dataset-checkpoint /path/to/checkpoint.pth
+```
 
 ## Contact
 If you have any questions, please contact [Meihua Xiao] via email (2021029081100011@ecjtu.edu.cn).
