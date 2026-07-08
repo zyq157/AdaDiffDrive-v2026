@@ -36,12 +36,11 @@ Generating safe, diverse and even human-like trajectories in complex traffic env
 We provide two ways to set up the environment:
 
 **Option 1: Using Conda (Recommended)**
-```bash
-# Create and activate the conda environment from the provided file
+
 conda env create -f environment.yml
 conda activate adadiffdrive
 
-**Option 2: Using pip
+**Option 2: Using pip**
 pip install -r requirements.txt
 
 ### Dataset Preparation
