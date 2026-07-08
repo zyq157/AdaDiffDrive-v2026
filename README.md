@@ -168,6 +168,6 @@ This repository also includes the following supplementary files to support repro
 
 - **`Static anchors.npy`**: A NumPy binary file containing the static anchor trajectories used in our experiments. These anchors serve as fixed priors for comparison with our proposed Adaptive Anchored Gaussian Distribution (AAGD) in the ablation studies (see Section 4.3 in the paper). The file can be loaded using `np.load('Static anchors.npy')`.
 
-- **`Calculation result file.csv`**: A CSV file containing the detailed numerical results of our experiments on the NAVSIM benchmark. It includes the PDMS scores, trajectory accuracy metrics, and collision rates for all compared methods (AdaDiffDrive, DiffusionDrive, VAD, etc.). This file enables readers to reproduce the quantitative results reported in Table 1 and Figure 5 of our paper.
+- **`Calculation result file.csv`**: A CSV file containing the complete evaluation results of our proposed **AdaDiffDrive** on the NAVSIM planning benchmark. It includes the PDMS scores, trajectory accuracy metrics, and collision rates achieved by our method across all test scenarios. This file provides the raw numerical data behind the quantitative results reported in our paper, enabling readers to verify the performance claims and conduct further statistical analysis.
 
 For any questions regarding these files, please feel free to [open an issue](https://github.com/zyq157/AdaDiffDrive-v2026/issues) or contact the corresponding author.
