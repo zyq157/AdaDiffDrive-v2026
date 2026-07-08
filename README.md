@@ -17,7 +17,7 @@ Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1
   - [Training & Evaluation](#training--evaluation)
 - [Contact](#contact)
 - [Acknowledgement](#acknowledgement)
-- [Additional Resources](Additional Resources)
+- [Additional Resources](#Additional Resources)
 
 
 ## Abstract
