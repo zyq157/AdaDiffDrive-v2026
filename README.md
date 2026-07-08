@@ -11,10 +11,15 @@ Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1
 </div>
 
 ## Table of Contents
-- [Abstract](#Abstract)
+- [Abstract](#abstract)
 - [Getting Started](#getting-started)
-- [Contact](#contact)
+  - [Environment Setup](#environment-setup)
+  - [Dataset Preparation](#dataset-preparation)
+  - [Training & Evaluation](#training--evaluation)
+- [Project Structure](#project-structure)
+- [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
+- [Contact](#contact)
 
 
 ## Abstract
@@ -25,6 +30,33 @@ Generating safe, diverse and even human-like trajectories in complex traffic env
 
 - [Getting started from NAVSIM environment preparation](https://github.com/autonomousvision/navsim?tab=readme-ov-file#getting-started-)
 - [Preparation of AdaDiffDrive environment](install.md)
+
+### Environment Setup
+
+We provide two ways to set up the environment:
+
+**Option 1: Using Conda (Recommended)**
+```bash
+# Create and activate the conda environment from the provided file
+conda env create -f environment.yml
+conda activate adadiffdrive
+
+**Option 2: Using pip
+pip install -r requirements.txt
+
+### Dataset Preparation
+AdaDiffDrive is evaluated on the NAVSIM benchmark.
+
+1. Download the NAVSIM dataset and place it in your desired directory. For detailed instructions, please refer to the official NAVSIM getting started guide.
+
+2. Expected directory structure:
+/path/to/your/data/
+└── navsim/
+    ├── train/
+    ├── val/
+    └── test/
+3. (Optional but recommended) Preprocess the dataset to generate cached features for faster training. This step may take some time.
+python run_dataset_caching.py --dataset_path /path/to/your/data/navsim --cache_path ./cache
 
 ## Contact
 If you have any questions, please contact [Meihua Xiao] via email (2021029081100011@ecjtu.edu.cn).
