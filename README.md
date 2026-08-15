@@ -6,7 +6,7 @@ Yingqiang Zhong.<sup>1,2</sup>, Meihua Xiao.<sup>1</sup>, Fei Mo.<sup>1
  
  <sup>1</sup> Department of Control Science and Engineering, College of Electrical and Automation Engineering, East China Jiaotong University, <sup>2</sup> Department of Automotive Engineering, Jiangxi Vocational and Technical College of Communications
  
- AdaDiffDrive_code. Zenodo. https://doi.org/10.5281/zenodo.20626700
+ AdaDiffDrive_code. Zenodo. [https://doi.org/10.5281/zenodo.20626700](https://zenodo.org/records/21942062)
 
 </div>
 
